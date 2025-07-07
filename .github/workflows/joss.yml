@@ -16,18 +16,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Setup TeX
-        uses: teatimeguest/setup-texlive-action@v2
-
-      - name: Install pandoc
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y pandoc
-
-      - name: Compile paper
-        run: |
-          mkdir output
-          pandoc paper.md --citeproc --bibliography=paper.bib -o output/paper.pdf
+      - name: Setup TeX environment
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: paper.md
+          compiler: latexmk
+          args: "-pdf -interaction=nonstopmode -output-directory=output"
 
       - name: Upload paper PDF
         uses: actions/upload-artifact@v4
