@@ -1,0 +1,36 @@
+name: Compile JOSS Paper
+
+on:
+  push:
+    paths:
+      - 'paper.md'
+      - 'paper.bib'
+  pull_request:
+
+jobs:
+  build-paper:
+    runs-on: ubuntu-latest
+    name: Build paper
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup TeX
+        uses: teatimeguest/setup-texlive-action@v2
+
+      - name: Install pandoc and citeproc
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc pandoc-citeproc
+
+      - name: Compile paper
+        run: |
+          mkdir output
+          pandoc paper.md --citeproc --bibliography=paper.bib -o output/paper.pdf
+
+      - name: Upload paper PDF
+        uses: actions/upload-artifact@v3
+        with:
+          name: compiled-paper
+          path: output/paper.pdf
