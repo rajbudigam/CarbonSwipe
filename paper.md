@@ -38,10 +38,13 @@ pip install git+https://github.com/rajbudigam/CarbonSwipe.git
 ```
 Once you have installed it, you can measure the energy, carbon, and water footprint of a single prompt with just a few lines of code:
 
+```python
 from carbonswipe import CarbonTracker
+
 tracker = CarbonTracker(model_path="mistral7b_q4.bin", device="cuda")
 energy, co2, water = tracker.measure("Hello, world!")
 print(f"Energy: {energy:.4f} kWh, CO2: {co2:.2f} g, Water: {water:.2f} mL")
+```
 
 # Functionality
 
