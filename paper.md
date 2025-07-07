@@ -1,18 +1,20 @@
+---
 title: "A Lightweight Pipeline for Measuring Energy, Carbon, and Water Costs of Large Language Models"
+tags:
+  - Python
+  - AI
+  - sustainability
+  - energy
+  - LLM
 authors:
-- name: "Jasraj Budigam"
-  affiliation: 1
+  - name: "Jasraj Budigam"
+affiliation: 1
 affiliations:
-- name: "Indus International School, Hyderabad"
-  index: 1
+  - name: "Indus International School, Hyderabad"
+    index: 1
 date: 6 July 2025
 bibliography: paper.bib
-tags:
-- Python
-- AI
-- sustainability
-- energy
-- LLM
+
 ---
 
 # Summary
