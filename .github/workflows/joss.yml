@@ -30,7 +30,7 @@ jobs:
           pandoc paper.md --citeproc --bibliography=paper.bib -o output/paper.pdf
 
       - name: Upload paper PDF
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: compiled-paper
           path: output/paper.pdf
