@@ -1,10 +1,10 @@
-# 🧾 CarbonSwipe: Measuring the Hidden Cost of AI Queries
+# CarbonSwipe: Measuring the Hidden Cost of AI Queries
 
 **CarbonSwipe** is a lightweight, reproducible pipeline to measure the **energy**, **carbon**, and **water footprint** of large language model (LLM) inference on consumer hardware. It benchmarks the environmental impact of running quantized models locally—prompt-by-prompt—using tools like `codecarbon` and `llama-cpp-python`.
 
 ---
 
-## 📌 Overview
+## Overview
 
 Large Language Models (LLMs) like GPT-4o consume significant energy during inference. While much focus is placed on training emissions, billions of daily user queries shift the environmental burden to inference. This project addresses that gap by:
 
@@ -18,7 +18,7 @@ Large Language Models (LLMs) like GPT-4o consume significant energy during infer
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 CarbonSwipe/
@@ -32,7 +32,7 @@ CarbonSwipe/
 
 ---
 
-## 🚀 Setup & Run
+## Setup & Run
 
 ### 1. Install dependencies
 
@@ -58,35 +58,35 @@ Use `code.ipynb` to:
 
 ---
 
-## 📊 Sample Outputs
+## Sample Outputs
 
-### 📈 Distributions
+### Distributions
 
 ![Distribution](./result1.png)
 
-### 🔁 Correlations
+### Correlations
 
 ![Correlation Matrix](./result2.png)
 
-### 📉 Prompt Length vs Energy
+### Prompt Length vs Energy
 
 ![Prompt Length vs Energy](./result3.png)
 
-### 📦 Boxplot by Prompt Category
+### Boxplot by Prompt Category
 
 ![Boxplot](./result4.png)
 
-### 📊 Mean Energy by Category
+### Mean Energy by Category
 
 ![Barplot](./result5.png)
 
-### 🌍 Global Scaling Estimate
+### Global Scaling Estimate
 
 ![Scale](./result6.png)
 
 ---
 
-## 📉 Key Results (150 prompts)
+## Key Results (150 prompts)
 
 | Metric                   | Mean ± SD          |
 |--------------------------|--------------------|
@@ -98,10 +98,10 @@ Use `code.ipynb` to:
 
 ---
 
-## 💡 Proposed: AI Carbon Receipt
+## Proposed: AI Carbon Receipt
 
 ```
-🧾 AI Carbon Receipt
+AI Carbon Receipt
 Energy: 0.383 Wh  |  CO₂: 0.182 g  |  Water: 0.689 mL
 ```
 
@@ -110,7 +110,7 @@ A simple, readable format to expose per-query environmental costs to users.
 
 ---
 
-## 📎 Acknowledgements
+## Acknowledgements
 
 - Mistral-7B model: [TheBloke](https://huggingface.co/TheBloke)
 - Carbon tracking: [CodeCarbon](https://github.com/mlco2/codecarbon)
@@ -118,13 +118,13 @@ A simple, readable format to expose per-query environmental costs to users.
 
 ---
 
-## 📜 License
+## License
 
 MIT License — use freely with attribution.
 
 ---
 
-## 📬 Contact
+## Contact
 
 **Author**: Jasraj Budigam  
 **Email**: budigamjasraj@gmail.com
