@@ -1,6 +1,6 @@
 # CarbonSwipe: Measuring the Hidden Cost of AI Queries
 
-**CarbonSwipe** is a lightweight, reproducible pipeline to measure the **energy**, **carbon**, and **water footprint** of large language model (LLM) inference on consumer hardware. It benchmarks the environmental impact of running quantized models locally—prompt-by-prompt—using tools like `codecarbon` and `llama-cpp-python`.
+**CarbonSwipe** is a lightweight, reproducible pipeline to measure the **energy**, **carbon**, and **water footprint** of large language model (LLM) inference on consumer hardware. It benchmarks the environmental impact of running quantized models locally prompt-by-prompt using tools like `codecarbon` and `llama-cpp-python`.
 
 ---
 
@@ -25,8 +25,8 @@ CarbonSwipe/
 ├── code.ipynb                  # Main benchmarking and visualization pipeline
 ├── Benchmark_Prompts.csv       # 150 prompts for testing
 ├── benchmark_results.csv       # Outputs: energy, CO₂, latency, length
-├── result1.png ... result6.png # Final plots (referenced in paper)
-├── Research_Intersect.docx     # Academic-style paper writeup
+├── result1.png ... result6.png # Final plots
+├── Research_Intersect.docx     # The paper 
 └── README.md                   # You're reading it!
 ```
 
